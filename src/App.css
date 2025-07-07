@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* src/App.css */
+/* ROOT CONTAINER */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* LOGO STYLES (optional) */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* CARD & LINK STYLES (if used) */
+.card {
+  padding: 2em;
+}
+.read-the-docs {
+  color: #888;
+}
+
+/* APP CONTAINER */
+.app-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* EDITOR & PREVIEW LAYOUT */
+.editor-preview {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.preview-pane {
+  flex: 1;
+  border-left: 1px solid #ddd;
+  padding-left: 1rem;
+  overflow-y: auto;
+}
+
+.markdown-editor {
+  flex: 1;
+  display: flex;
+}
+.markdown-editor .wmde-markdown-editor {
+  width: 100%;            /* que el editor llene su contenedor */
+  height: calc(100vh - 200px);
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.preview-pane {
+  height: auto;
+  border-top: 1px solid #ddd;   /* Línea superior */
+  border-bottom: 1px solid #ddd; /* Línea inferior */
+  border-right: 1px solid #ddd; /* Línea derecha */
+  border-radius: 4px;
+  padding: 1rem;
+  background: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* DOWNLOAD BUTTON CENTERED */
+.app-container > button {
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.no-borders .preview-pane,
+.no-borders .markdown-editor .wmde-markdown-editor {
+  border: none !important;
+}
